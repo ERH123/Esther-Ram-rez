@@ -1,0 +1,178 @@
+@charset "utf-8";
+* {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    text-style: none;
+    list-style: none;
+   
+}
+
+.cabecera {
+    width: 100%;
+    left: auto;
+    background-color: #010B3A;
+    height: 15%;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: none;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; /*pegar link en head en el html y el css desde Google Fonts*/
+    text-align: left;
+    padding-left: 1%;
+    }
+nav {
+    background:#FE4500;
+    height: 80px;
+    width: 100%;
+   }
+
+nav ul { /*para enviar los elementos de lista sin ordenar a la derecha*/
+    float:right;
+    margin-right: 20px;
+}
+
+nav ul li { /*para dar formato a los elementos de lista*/
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+    z-index: 8;
+}
+
+nav ul li a { /*para dar formato a los enlaces o links*/
+    color: white;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    z-index: 12;
+}
+
+a:hover {  /*para hacer un cambio de color al pasar el ratón*/
+    background-color: #010B3A;
+    transition: .5s;
+}
+
+.contenedor2 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.principal {
+    width: 45%;
+    max-height: 80%;
+    background-color: #bbbcf5;
+    padding: 2%;
+    margin-right: 2%;
+}
+.seccion {
+    width: 24%;
+    max-height: 80%;
+    background-color: #BEBDC5;
+    padding: 2%;
+    margin-right: 2%;
+}
+img {
+    max-width: 100%;
+ }
+.barralateral {
+    width: 30%;
+    max-height: 80%;
+    background-color: #2D3248;
+    color: white;
+    padding: 2%;
+}
+.contenedor3 {
+    width: 100%;
+    max-height: 60%;
+    background-color: #03806E;
+    margin-top: 1%;
+}
+.articulos {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.articulos>div {
+    width: 20%;
+    max-height: 60%;
+    color: aquamarine;
+    background-color: #045160;
+    text-align: center;
+    padding: 2%;
+}
+.pie {
+    width: 100%;
+    height: 10%;
+    background-color: #05baaf;
+    color: #e6e6f4;
+    clear: both;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 14px;
+    font-size: 1em;
+}
+/*animaciones con CSS*/
+
+.latido {
+    animation-name: pulso;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes pulso {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
+#color3 {
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+#color3:hover {
+    background-color: darkorange;
+}
+
+#color4 {
+    transition: transform 1s ease-out;
+}
+#color4:hover {
+    transform: rotate(360deg);
+}
+#barra {
+    transition-property: background-color, border-radius;
+    transition-duration: 5s;
+}
+#barra:hover {
+    background-color:#046748;
+    border-radius: 75px;
+}
+
+.video {
+    clear: both;
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+video {
+    position: relative;
+    top:0px;
+         }
